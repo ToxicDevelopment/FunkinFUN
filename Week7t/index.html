@@ -1,300 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
+	<meta charset="utf-8">
+
+	<title>Friday Night Funkin'</title>
+
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+	<link rel="shortcut icon" type="image/png" href="./favicon.png">
+
+
+	<script type="text/javascript" src="./Funkin.js"></script>
+
+	<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
+			var meta = document.getElementById ("viewport");
+			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+		}
+	</script>
+
+	<style>
+		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+		#openfl-content { background: #000000; width: 100%; height: 100%; }
+		@font-face {
+			font-family: 'Pixel Arial 11 Bold';
+			src: url('assets/fonts/pixel.eot?#iefix') format('embedded-opentype'),
+			url('assets/fonts/pixel.woff') format('woff'),
+			url('assets/fonts/pixel.otf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'VCR OSD Mono';
+			src: url('assets/fonts/vcr.eot?#iefix') format('embedded-opentype'),
+			url('assets/fonts/vcr.woff') format('woff'),
+			url('assets/fonts/vcr.ttf') format('truetype'),
+			url('assets/fonts/vcr.svg#VCR%20OSD%20Mono') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Nokia Cellphone FC Small';
+			src: url('flixel/fonts/nokiafc22.eot?#iefix') format('embedded-opentype'),
+			url('flixel/fonts/nokiafc22.woff') format('woff'),
+			url('flixel/fonts/nokiafc22.ttf') format('truetype'),
+			url('flixel/fonts/nokiafc22.svg#Nokia%20Cellphone%20FC%20Small') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Monsterrat';
+			src: url('flixel/fonts/monsterrat.eot?#iefix') format('embedded-opentype'),
+			url('flixel/fonts/monsterrat.woff') format('woff'),
+			url('flixel/fonts/monsterrat.ttf') format('truetype'),
+			url('flixel/fonts/monsterrat.svg#Monsterrat') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+	</style>
 
 </head>
 <body>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3353530963093298"
-     crossorigin="anonymous"></script>
-<h2>Welcome to Funkin.Fun</h2>
-<title>Funkin.fun </title>
-<link rel="icon" type="image/x-icon" href="/Imgs/favicon.ico">
-<p>If you would like me to add mods/games to play email Astroblade182@gmail.com</p>
-<div style="position:relative; height:60px;">
-  <h1><li class="oli"><a href="Week7t/index.html" title="Home" style="color:black">WEEK7</a></li></h1><div style="position:relative; height:60px;">
 
+	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
 
+	<div id="openfl-content"></div>
 
+	<script type="text/javascript">
+		lime.embed ("Funkin", "openfl-content", 1280, 720, { parameters: {} });
+	</script>
 
-
-
-<style>
-.Imposter {
-  clip-path: circle(64%);
-  position: relative;
-  left: 8%;
-}
-
-.annie {
-  clip-path: circle(64%);
-  position: relative;
-  left: 4%;
-}
-
-
-
-.Imgs {
-  clip-path: circle(64%);
-  position: relative;
-  left: 3%;
-}
-
-.Longer {
-  clip-path: circle(64%);
-  position: relative;
-  left: 25%;
-}
-  </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style type="text/css"><!--
-#menuv {
-position:relative;
-padding:2px;
-}
-
- /* Properties for horizontal menu */
-#menuv .oli ul, #menuv .olishow ul {
-display:none;
-position:absolute;
-margin:1px auto 1px -8px;
-background-color:purple;
-border:1px dashed blue;
-padding:1px;
-opacity: 0.5;
-}
-#menuv .olishow {
-background-color: #dedede;
-opacity: 0.1;
-}
-
- /* Properties for vertical menu */
-#menuv .oli ul, #menuv .olishow ul {
-display:none;
-position:absolute;
-margin:1px auto 1px -8px;
-background-color:#dedede;
-border:1px dashed blue;
-padding:1px;
-opacity: 0.33;
-}
-#menuv li ul li {
-position:relative;
-clear:both;
-width:99%;
-margin:1px 0;
-border:none;
-background-color:#edfeed;
-padding:1px;
-}
-#menuv li:hover ul, #menuv .olishow ul {
-display:block;
-}
-
- /* Links in sub-menu */
-#menuv ul li a {
-display:block;
-margin:0;
-font-weight:normal;
-padding:1px;
-}
-#menuv ul li a:hover, #menuv ul .vlishow a {
-background-color:#fefefe;
-text-decoration:none;
-font-style:oblique;
-color:#fb0001;
-}
-
-body {
- background-image: url('/proxy/https://funkin.online/menuBGBlue.png');
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: cover;
- opacity: 1.0;
-}
-</style>
-
-   <style type="text/css">
-                   body{
-               font-family: 'friday_night_funkinregular';
-                           }
-       </style>
-       
-       
-<style>@font-face {
-   font-family: 'friday_night_funkinregular';
-   src: url('/proxy/https://funkin.online/fonts/fridaynightfunkin-regular-webfont.woff2') format('woff2'),
-        url('/proxy/https://funkin.online/fonts/fridaynightfunkin-regular-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
-
-}</style>		
-
-
-<script>document.addEventListener('keydown', function(e) {
- if (e.keyCode == 38) {
-   document.getElementById('audio').play();
- }
-});</script>
-<script>document.addEventListener('keydown', function(e) {
- if (e.keyCode == 40) {
-   document.getElementById('audio2').play();
- }
-});</script>
-<script>document.addEventListener('keydown', function(e) {
- if (e.keyCode == 13) {
-   document.getElementById('audio3').play();
- }
-});</script>
-<style>h1 {
- font-size: 30px;
-}</style>
-<style>h4 {
- font-size: 35px;
-}</style>
-<style>h2 {
- font-size: 20px;
-}</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<style type="text/css"><!--
-body {
-     overflow-x: hidden;
-     margin: 0;
-     padding: 0;
-}
-#menuv {
-position:relative;
-padding:2px;
-}
-
- /* Properties for horizontal menu */
-#menuv .oli ul, #menuv .olishow ul {
-display:none;
-position:absolute;
-margin:1px auto 1px -8px;
-background-color:purple;
-border:1px dashed blue;
-padding:1px;
-opacity: 0.5;
-}
-#menuv .olishow {
-background-color: #dedede;
-opacity: 0.1;
-}
-
- /* Properties for vertical menu */
-#menuv .oli ul, #menuv .olishow ul {
-display:none;
-position:absolute;
-margin:1px auto 1px -8px;
-background-color:#dedede;
-border:1px dashed blue;
-padding:1px;
-opacity: 0.33;
-}
-#menuv li ul li {
-position:relative;
-clear:both;
-width:99%;
-margin:1px 0;
-border:none;
-background-color:#edfeed;
-padding:1px;
-}
-#menuv li:hover ul, #menuv .olishow ul {
-display:block;
-}
-
- /* Links in sub-menu */
-#menuv ul li a {
-display:block;
-margin:0;
-font-weight:normal;
-padding:1px;
-}
-#menuv ul li a:hover, #menuv ul .vlishow a {
-background-color:#fefefe;
-text-decoration:none;
-font-style:oblique;
-color:#fb0001;
-}
-
-body {
- background-image: url('/menuBGBlue.png');
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: cover;
- opacity: 1.0;
-}
-</style>
-
-   <style type="text/css">
-                   body{
-               font-family: 'friday_night_funkinregular';
-                           }
-       </style>
-       
-       
-<style>@font-face {
-   font-family: 'friday_night_funkinregular';
-   src: url('/fonts/fridaynightfunkin-regular-webfont.woff2') format('woff2'),
-        url('/fonts/fridaynightfunkin-regular-webfont.woff') format('woff');
-   font-weight: normal;
-   font-style: normal;
-
-}</style>		
-</style>
+</body>
+</html>
